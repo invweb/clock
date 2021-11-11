@@ -29,94 +29,224 @@ class MainActivity : ComponentActivity() {
                     Circles()
                     val calendar = Calendar.getInstance()
                     calendar.timeInMillis = System.currentTimeMillis()
-                    drawHands(calendar)
+                    DrawHands(calendar)
                 }
             }
         }
     }
 
-@Composable
-@Preview
-fun Circles() {
-    Column(
-        modifier = Modifier.padding(start = 32.dp, top = 32.dp, bottom = 32.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-    ) {
-        Row(
-            modifier = Modifier.fillMaxWidth()
+    @Composable
+    @Preview
+    fun Circles() {
+        Column(
+            modifier = Modifier.padding(start = 32.dp, top = 32.dp, bottom = 32.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Text(
-                modifier = Modifier
-                    .padding(start = 71.dp), text = "0"
-            )
+            Row(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    modifier = Modifier
+                        .padding(start = 66.dp), text = "12"
+                )
 
-        }
-        Row(
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Box(
-                modifier = Modifier
-                    .padding(start = 70.dp)
-                    .height(10.dp)
-                    .width(10.dp)
-                    .background(color = Color.Black, shape = RoundedCornerShape(50))
-            )
-        }
+            }
+            Row(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Box(
+                    modifier = Modifier
+                        .padding(start = 70.dp)
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(color = Color.Black, shape = RoundedCornerShape(50))
+                )
+            }
 
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 50.dp)
-        ) {
-            Text(
+            Row(
                 modifier = Modifier
-                    .padding(start = 0.dp), text = "45"
-            )
-            Box(
-                modifier = Modifier
-                    .height(10.dp)
-                    .width(10.dp)
-                    .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
-            )
+                    .fillMaxWidth()
+                    .padding(top = 10.dp)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .padding(start = 30.dp), text = "11"
+                )
+                Box(
+                    modifier = Modifier
+                        .padding(start = 5.dp)
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
+                )
 
-            Box(
-                modifier = Modifier
-                    .padding(start = 100.dp)
-                    .height(10.dp)
-                    .width(10.dp)
-                    .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
-            )
-            Text(
-                modifier = Modifier
-                    .padding(start = 0.dp),
-                text = "15"
-            )
-        }
+                Box(
+                    modifier = Modifier
+                        .padding(start = 31.dp)
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
+                )
+                Text(
+                    modifier = Modifier
+                        .padding(start = 0.dp),
+                    text = "1"
+                )
+            }
 
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 50.dp, start = 70.dp)
-        ) {
-            Box(
+            Row(
                 modifier = Modifier
-                    .height(10.dp)
-                    .width(10.dp)
-                    .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
-            )
-        }
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(start = 68.dp)
-        ) {
-            Text(text = "30")
+                    .fillMaxWidth()
+                    .padding(top = 5.dp)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .padding(start = 10.dp), text = "10"
+                )
+                Box(
+                    modifier = Modifier
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(
+                            color = Color.Black,
+                            shape = RoundedCornerShape(5.dp)
+                        )
+                )
+
+                Box(
+                    modifier = Modifier
+                        .padding(start = 80.dp)
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
+                )
+                Text(
+                    modifier = Modifier
+                        .padding(start = 0.dp),
+                    text = "2"
+                )
+            }
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 5.dp)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .padding(start = 0.dp), text = "9"
+                )
+                Box(
+                    modifier = Modifier
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
+                )
+
+                Box(
+                    modifier = Modifier
+                        .padding(start = 125.dp)
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
+                )
+                Text(
+                    modifier = Modifier
+                        .padding(start = 0.dp),
+                    text = "3"
+                )
+            }
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 5.dp)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .padding(start = 19.dp), text = "8"
+                )
+                Box(
+                    modifier = Modifier
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
+                )
+
+                Box(
+                    modifier = Modifier
+                        .padding(start = 81.dp)
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
+                )
+                Text(
+                    modifier = Modifier
+                        .padding(start = 0.dp),
+                    text = "4"
+                )
+            }
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 5.dp)
+            ) {
+                Text(
+                    modifier = Modifier
+                        .padding(start = 39.dp), text = "7"
+                )
+                Box(
+                    modifier = Modifier
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(
+                            color = Color.Black,
+                            shape = RoundedCornerShape(5.dp)
+                        )
+                )
+
+                Box(
+                    modifier = Modifier
+                        .padding(start = 41.dp)
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(
+                            color = Color.Black,
+                            shape = RoundedCornerShape(5.dp)
+                        )
+                )
+                Text(
+                    modifier = Modifier
+                        .padding(start = 0.dp),
+                    text = "5"
+                )
+            }
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 0.dp, start = 70.dp)
+            ) {
+                Box(
+                    modifier = Modifier
+                        .height(10.dp)
+                        .width(10.dp)
+                        .background(color = Color.Black, shape = RoundedCornerShape(5.dp))
+                )
+            }
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 68.dp)
+            ) {
+                Text(text = "6")
+            }
         }
     }
-}
 
     @Composable
-    fun drawHands(calendar: Calendar) {
+    fun DrawHands(calendar: Calendar) {
         Canvas(modifier = Modifier.fillMaxSize()) {
             //minutes line
             val minutes = calendar.get(Calendar.MINUTE)
@@ -139,13 +269,13 @@ fun Circles() {
                     xMinutes = 0f
                     yMinutes= 380f
                 }
+                in 40..45 -> {
+                    xMinutes = 800f
+                    yMinutes= 300f
+                }
             }
             drawLine(
-                start = Offset(x = 380f, y = 410f), //center
-//                end = Offset(x = 100f, y = 100f),//
-//                end = Offset(x = 0f, y = 410f),//Blue line left
-//                end = Offset(x = 760f, y = 410f),//Blue line right
-//                end = Offset(x = 380f, y = 0f),//Blue line up
+                start = Offset(x = 380f, y = 470f), //center
                 end = Offset(x = xMinutes, y = yMinutes),//Blue line down
 
                 color = Color.Blue,
@@ -155,38 +285,112 @@ fun Circles() {
 
             //hours line
             val hours = calendar.get(Calendar.HOUR_OF_DAY)
-            var x = 0f
-            var y = 0f
+            var xHours = 0f
+            var yHours = 0f
             when (hours) {
-                in 0..14 -> {
-                    x = 380f
-                    y= 0f
+                0 -> {
+                    xHours = 200f
+                    yHours= 0f
                 }
-                in 15..29 -> {
-                    x = 760f
-                    y= 410f
+                1 -> {//1
+                    xHours = 560f
+                    yHours= 0f
                 }
-                in 30..44 -> {
-                    x = 380f
-                    y= 800f
+                2  -> {//2
+                    xHours = 600f
+                    yHours= 0f
                 }
-                in 45..60 -> {
-                    x = 0f
-                    y= 380f
+                3 -> {//3
+                    xHours = 800f
+                    yHours= 450f
+                }
+                4 -> {//4
+                    xHours = 800f
+                    yHours= 670f
+                }
+                5 -> {//5
+                    xHours = 900f
+                    yHours= 1570f
+                }
+                6 -> {//6
+                    xHours = 380f
+                    yHours= 800f
+                }
+                7 -> {//7-
+                    xHours = 200f
+                    yHours= 0f
+                }
+                8 -> {//8-
+                    xHours = 200f
+                    yHours= 0f
+                }
+                9 -> {//9
+                    xHours = -680f
+                    yHours= 400f
+                }
+                10 -> {//10
+                    xHours = -280f
+                    yHours= 0f
+                }
+                11 -> {//11
+                    xHours = 200f
+                    yHours= 0f
+                }
+                12 -> {//12
+                    xHours = 380f
+                    yHours= 0f
+                }
+                13 -> {//13
+                    xHours = 560f
+                    yHours= 0f
+                }
+                14 -> {//14
+                    xHours = 600f
+                    yHours= 0f
+                }
+                15 -> {//15
+                    xHours = 800f
+                    yHours= 450f
+                }
+                16 -> {//16
+                    xHours = 800f
+                    yHours= 670f
+                }
+                17 -> {//17
+                    xHours = 900f
+                    yHours= 1570f
+                }
+                18 -> {//18
+                    xHours = 380f
+                    yHours= 800f
+                }
+                19 -> {//19
+                    xHours = 240f
+                    yHours= 800f
+                }
+                20 -> {//20
+                    xHours = -700f
+                    yHours= 1070f
+                }
+                21 -> {//21-
+                    xHours = 200f
+                    yHours= 0f
+                }
+                22 -> {//22-
+                    xHours = 200f
+                    yHours= 0f
+                }
+                23 -> {//23-
+                    xHours = 200f
+                    yHours= 0f
                 }
             }
             drawLine(
-                start = Offset(x = 380f, y = 410f), //center
-                end = Offset(x = x, y = y),
-//                end = Offset(x = 0f, y = 410f),//Black line left
-//                end = Offset(x = 760f, y = 410f),//Black line right
-//                end = Offset(x = 380f, y = 0f),//Black line up
-//                end = Offset(x = 380f, y = 800f),//Black line down
+                start = Offset(x = 380f, y = 470f), //center
+                end = Offset(x = xHours, y = yHours),
                 color = Color.Black,
                 strokeWidth = 10f
             )
         }
     }
 }
-
-
