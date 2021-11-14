@@ -316,33 +316,33 @@ class MainActivity : ComponentActivity() {
                     xHours = 380f
                     yHours= 800f
                 }
-                7 -> {//7-
-                    xHours = 200f
-                    yHours= 0f
+                7 -> {//7
+                    xHours = 140f
+                    yHours= 1000f
                 }
-                8 -> {//8-
-                    xHours = 200f
-                    yHours= 0f
+                8 -> {//8
+                    xHours = 140f
+                    yHours= 600f
                 }
                 9 -> {//9
-                    xHours = -680f
-                    yHours= 400f
+                    xHours = 140f
+                    yHours= 460f
                 }
                 10 -> {//10
-                    xHours = -280f
-                    yHours= 0f
+                    xHours = 140f
+                    yHours= 320f
                 }
                 11 -> {//11
-                    xHours = 200f
-                    yHours= 0f
+                    xHours = 250f//
+                    yHours= 100f//
                 }
                 12 -> {//12
-                    xHours = 380f
-                    yHours= 0f
+                    xHours = 370f
+                    yHours= 100f
                 }
                 13 -> {//13
-                    xHours = 560f
-                    yHours= 0f
+                    xHours = 520f
+                    yHours= 100f
                 }
                 14 -> {//14
                     xHours = 600f
@@ -350,7 +350,7 @@ class MainActivity : ComponentActivity() {
                 }
                 15 -> {//15
                     xHours = 800f
-                    yHours= 450f
+                    yHours= 460f
                 }
                 16 -> {//16
                     xHours = 800f
@@ -368,21 +368,21 @@ class MainActivity : ComponentActivity() {
                     xHours = 240f
                     yHours= 800f
                 }
-                20 -> {//20
+                20/* остановился тут */ -> {//20
                     xHours = -700f
                     yHours= 1070f
                 }
-                21 -> {//21-
-                    xHours = 200f
-                    yHours= 0f
+                21 -> {//21
+                    xHours = 140f
+                    yHours= 460f
                 }
-                22 -> {//22-
-                    xHours = 200f
-                    yHours= 0f
+                22 -> {//22
+                    xHours = 140f
+                    yHours= 320f
                 }
-                23 -> {//23-
-                    xHours = 200f
-                    yHours= 0f
+                23 -> {//23
+                    xHours = 250f
+                    yHours= 100f
                 }
             }
             drawLine(
