@@ -47,7 +47,8 @@ class MainActivity : ComponentActivity() {
             ) {
                 Text(
                     modifier = Modifier
-                        .padding(start = 66.dp), text = "12"
+                        .padding(start = 66.dp),
+                    text = "12"
                 )
 
             }
@@ -261,7 +262,7 @@ class MainActivity : ComponentActivity() {
                     xMinutes = 760f
                     yMinutes= 410f
                 }
-                in 30..44 -> {
+                in 30..39 -> {
                     xMinutes = 380f
                     yMinutes= 800f
                 }
@@ -275,7 +276,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
             drawLine(
-                start = Offset(x = 380f, y = 470f), //center
+                start = Offset(x = 300f, y = 350f), //center
                 end = Offset(x = xMinutes, y = yMinutes),//Blue line down
 
                 color = Color.Blue,
@@ -386,7 +387,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
             drawLine(
-                start = Offset(x = 380f, y = 470f), //center
+                start = Offset(x = 300f, y = 350f), //center
                 end = Offset(x = xHours, y = yHours),
                 color = Color.Black,
                 strokeWidth = 10f
